@@ -1,0 +1,24 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: jltc
+  pid:
+    file: ${spring.application.name}.pid
+  jackson:
+    default-property-inclusion: non_null
+  servlet:
+    multipart:
+      max-file-size: 80MB
+      max-request-size: 80MB
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_sql?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+logging:
+  level:
+    me.gaopq.demo.mbp.example: debug
+  file:
+    name: ${spring.application.name}.log
