@@ -39,9 +39,9 @@ export default {
   },
   methods: {
     closeDialog() {
+      console.log('关闭了')
       const doc = document.getElementById(this.id)
       doc.close()
-      //
       this.open = false
     }
   }
