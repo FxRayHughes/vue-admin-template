@@ -1,8 +1,9 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
+    <button @click="openThis">开启</button>
     <!--    这里是新增的内容-->
-    <f-dialog id="dialogger" ref="child" :style-object="styleObject" :close-fun="closeFun">
+    <f-dialog id="dialogger" ref="child" :style-object="styleObject" :close-fun="closeFun" :open="defOpen">
       <button @click="closeThis">关闭</button>
     </f-dialog>
   </div>
@@ -20,7 +21,8 @@ export default {
       styleObject: {
         width: '50%',
         height: '100%'
-      }
+      },
+      defOpen: false
     }
   },
   computed: {
@@ -34,6 +36,9 @@ export default {
     },
     closeFun() {
       return true
+    },
+    openThis() {
+      this.$refs.child.openDialog()
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="open" class="f-dialog">
+  <div class="f-dialog">
     <dialog :id="id" class="f-dialog-main">
       <h2 class="f-dialog-title">{{ title }}</h2>
       <slot/>
@@ -43,7 +43,9 @@ export default {
       .join('; ')
     const doc = document.getElementById(this.id)
     doc.setAttribute('style', styleString)
-    doc.showModal()
+    if (this.open) {
+      doc.showModal()
+    }
   },
   methods: {
     closeDialog() {
@@ -52,6 +54,11 @@ export default {
         doc.close()
         this.open = false
       }
+    },
+    openDialog() {
+      this.open = true
+      const doc = document.getElementById(this.id)
+      doc.showModal()
     }
   }
 }

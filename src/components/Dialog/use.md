@@ -25,7 +25,7 @@
 export default {
   methods: {
     openThis() {
-      this.$refs.child.open = true
+      this.$refs.child.openDialog()
     }
   }
 }
