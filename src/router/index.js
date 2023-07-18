@@ -54,7 +54,30 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
-
+  {
+    path: '/mes',
+    component: Layout,
+    redirect: '/mes/assembly',
+    name: 'mes',
+    meta: {
+      title: '执行制造MES',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'assembly',
+        name: 'assembly',
+        component: () => import('@/views/mes/assembly/index.vue'),
+        meta: { title: '作业装配', icon: 'table' }
+      },
+      {
+        path: 'quality',
+        name: 'quality',
+        component: () => import('@/views/mes/quality/index.vue'),
+        meta: { title: '质量管理', icon: 'table' }
+      }
+    ]
+  },
   {
     path: '/example',
     component: Layout,
@@ -89,7 +112,6 @@ export const constantRoutes = [
       }
     ]
   },
-
   {
     path: '/nested',
     component: Layout,

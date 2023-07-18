@@ -1,7 +1,8 @@
 <template>
   <div v-if="open" class="f-dialog">
-    <dialog :id="id">
-      <slot />
+    <dialog :id="id" class="f-dialog-main">
+      <h2 class="f-dialog-title">{{ title }}</h2>
+      <slot/>
     </dialog>
   </div>
 </template>
@@ -10,6 +11,10 @@
 export default {
   name: 'FDialog',
   props: {
+    title: {
+      type: String,
+      default: '信息弹窗'
+    },
     id: {
       type: String,
       default: 'dialog'
@@ -22,11 +27,14 @@ export default {
           height: '100%'
         }
       }
-    }
-  },
-  data() {
-    return {
-      open: true
+    },
+    closeFun: {
+      type: Function,
+      default: () => false
+    },
+    open: {
+      type: Boolean,
+      default: true
     }
   },
   mounted() {
@@ -39,10 +47,11 @@ export default {
   },
   methods: {
     closeDialog() {
-      console.log('关闭了')
-      const doc = document.getElementById(this.id)
-      doc.close()
-      this.open = false
+      if (this.closeFun() === true) {
+        const doc = document.getElementById(this.id)
+        doc.close()
+        this.open = false
+      }
     }
   }
 }
@@ -51,4 +60,17 @@ export default {
 
 <style>
 
+.f-dialog-title {
+  text-align: center;
+}
+
+.f-dialog-main {
+  background-color: white;
+  border: 1px solid #ebebeb;
+//box-shadow: 1 1 0 0 #97a8be;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
 </style>

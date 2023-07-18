@@ -2,7 +2,7 @@
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>
     <!--    这里是新增的内容-->
-    <f-dialog id="dialogger" ref="child" :style-object="styleObject">
+    <f-dialog id="dialogger" ref="child" :style-object="styleObject" :close-fun="closeFun">
       <button @click="closeThis">关闭</button>
     </f-dialog>
   </div>
@@ -31,6 +31,9 @@ export default {
   methods: {
     closeThis() {
       this.$refs.child.closeDialog()
+    },
+    closeFun() {
+      return true
     }
   }
 }
