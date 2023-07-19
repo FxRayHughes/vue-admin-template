@@ -1,7 +1,7 @@
 plugins {
   id 'java'
-  id 'org.springframework.boot' version '3.1.1'
-  id 'io.spring.dependency-management' version '1.1.0'
+  id 'org.springframework.boot' version '2.7.14-SNAPSHOT'
+  id 'io.spring.dependency-management' version '1.0.15.RELEASE'
   id 'org.asciidoctor.jvm.convert' version '3.3.2'
 }
 
@@ -9,7 +9,7 @@ group = 'top.jltc'
 version = '0.0.1-SNAPSHOT'
 
 java {
-  sourceCompatibility = '17'
+  sourceCompatibility = '1.8'
 }
 
 configurations {
@@ -20,6 +20,8 @@ configurations {
 
 repositories {
   mavenCentral()
+  maven { url 'https://repo.spring.io/milestone' }
+  maven { url 'https://repo.spring.io/snapshot' }
 }
 
 ext {
@@ -27,19 +29,25 @@ ext {
 }
 
 dependencies {
-  implementation 'com.alibaba:druid-spring-boot-starter:1.2.16'
-  implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+  implementation 'org.springframework.boot:spring-boot-starter-data-redis'
   implementation 'org.springframework.boot:spring-boot-starter-security'
   implementation 'org.springframework.boot:spring-boot-starter-web'
-  implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
+  implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.1'
+  implementation 'org.springframework.session:spring-session-data-redis'
   compileOnly 'org.projectlombok:lombok'
   developmentOnly 'org.springframework.boot:spring-boot-devtools'
   runtimeOnly 'com.mysql:mysql-connector-j'
+  annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
   annotationProcessor 'org.projectlombok:lombok'
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
-  testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.2'
+  testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.3.1'
   testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
   testImplementation 'org.springframework.security:spring-security-test'
+
+  implementation 'com.alibaba.fastjson2:fastjson2-extension-spring5:2.0.36'
+  implementation 'com.alibaba:druid-spring-boot-starter:1.2.18'
+  implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+
 }
 
 tasks.named('test') {
