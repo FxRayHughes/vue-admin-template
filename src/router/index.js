@@ -76,7 +76,7 @@ export const constantRoutes = [
         component: () => import('@/views/mes/quality/index.vue'),
         meta: { title: '质量管理', icon: 'table' },
         children: [{
-          path: 'Standard',
+          path: 'standard',
           name: 'zhijianbiaozhun',
           component: () => import('@/views/mes/quality/Standard/index.vue'),
           meta: { title: '质检标准', icon: 'form' }

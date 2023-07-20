@@ -1,5 +1,7 @@
 <template>
-<div>质量追溯</div>
+  <div id="qua">
+    <h2>质量追溯</h2>
+  </div>
 </template>
 
 <script>
