@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.*;
 @Mapper
 public interface SystemUserMapper {
 
-  @Select("SELECT * FROM sys_user WHERE LOGIN_NAME = #{loginName}")
+  @Select("SELECT * FROM sys_user WHERE LOGIN_NAME = #{loginName} or TEL = #{loginName} or EMAIL = #{loginName}")
   @Results(id = "SystemUserResultMap", value = {
     @Result(id = true, column = "USER_ID", property = "userId"),
     @Result(column = "LOGIN_NAME", property = "loginName"),

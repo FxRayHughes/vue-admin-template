@@ -48,6 +48,6 @@ public class LoginUser implements UserDetails {
 
   @Override
   public boolean isEnabled() {
-    return true;
+    return systemUserEntity.getStatus() == 0;
   }
 }
