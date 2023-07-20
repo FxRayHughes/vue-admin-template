@@ -51,7 +51,7 @@ export const constantRoutes = [
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      meta: { title: '乔木的主页', icon: 'dashboard' }
     }]
   },
   {
@@ -74,28 +74,31 @@ export const constantRoutes = [
         path: 'quality',
         name: 'quality',
         component: () => import('@/views/mes/quality/index.vue'),
-        meta: { title: '质量管理', icon: 'table' }
-      }
-    ]
-  },
-  {
-    path: '/example',
-    component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        meta: { title: '质量管理', icon: 'table' },
+        children: [{
+          path: 'Standard',
+          name: 'zhijianbiaozhun',
+          component: () => import('@/views/mes/quality/Standard/index.vue'),
+          meta: { title: '质检标准', icon: 'form' }
+        }, {
+          path: 'smmpling',
+          name: 'shengchancaiyang',
+          component: () => import('@/views/mes/quality/sampling/index.vue'),
+          meta: { title: '生产采样', icon: 'form' }
+        }, {
+          path: 'Quality',
+          name: 'zhiliangzhuisu',
+          component: () => import('@/views/mes/quality/Quality/index.vue'),
+          meta: { title: '质量追溯', icon: 'form' }
+        }, {
+          path: 'Manage',
+          name: 'fangcuoguanli',
+          component: () => import('@/views/mes/quality/Manage/index.vue'),
+          meta: { title: '放错管理', icon: 'form' }
+        }
+
+        ]
+
       }
     ]
   },
