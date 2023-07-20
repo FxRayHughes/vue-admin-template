@@ -13,7 +13,6 @@ import java.util.Date;
 @NoArgsConstructor
 public class SystemUserEntity implements Serializable {
 
-  @Value("USER_ID")
   private Integer UserId;
 
   private String LoginName;
