@@ -9,7 +9,6 @@ import top.jltc.server.utils.ResponseResult;
 import javax.annotation.Resource;
 
 @RestController
-@CrossOrigin
 @RequestMapping("/api/user")
 public class LoginController {
 

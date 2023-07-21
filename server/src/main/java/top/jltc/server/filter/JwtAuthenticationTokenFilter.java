@@ -1,9 +1,6 @@
 package top.jltc.server.filter;
 
 import io.jsonwebtoken.Claims;
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
@@ -23,7 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Objects;
 
-public class JwtAuthenticationTokenFilter extends OncePerRequestFilter{
+@Component
+public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
   @Resource
   private RedisCache redisCache;
@@ -31,13 +29,14 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter{
   @Override
   protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
     //获取token
-    String token = request.getHeader("token");
+    String token = request.getHeader("Token");
     if (!StringUtils.hasText(token)) {
       //放行
       filterChain.doFilter(request, response);
       return;
     }
     //解析token
+    System.out.println("1");
     String userid;
     try {
       Claims claims = JwtUtil.parseJWT(token);
@@ -46,9 +45,11 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter{
       e.printStackTrace();
       throw new RuntimeException("token非法");
     }
+    System.out.println("2");
     //从redis中获取用户信息
     String redisKey = "login:" + userid;
 
+    System.out.println("3");
     WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(request.getServletContext());
     if (webApplicationContext != null) {
       SystemUserEntity loginUser = webApplicationContext.getBean(RedisCache.class).getCacheObject(redisKey);
