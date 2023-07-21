@@ -10,6 +10,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import top.jltc.server.filter.JwtAuthenticationTokenFilter;
+import top.jltc.server.utils.RedisCache;
 
 import javax.annotation.Resource;
 
@@ -18,6 +21,9 @@ public class SecurityConfig {
 
   @Resource
   private UserDetailsService userServiceImpl;
+
+  @Resource
+  private RedisCache redisCache;
 
   @Bean
   public PasswordEncoder passwordEncoder() {
@@ -48,6 +54,7 @@ public class SecurityConfig {
       .and()
       .cors()
       .and()
+      .addFilterBefore(new JwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class)
       .build();
   }
 }

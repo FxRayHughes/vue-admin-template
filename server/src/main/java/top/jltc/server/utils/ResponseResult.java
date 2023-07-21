@@ -25,6 +25,12 @@ public class ResponseResult<T> {
     return new ResponseResult<>(500, string);
   }
 
+  public static <T> ResponseResult<T> error(T string, String message) {
+    ResponseResult<T> tResponseResult = new ResponseResult<>(500, string);
+    tResponseResult.setMsg(message);
+    return tResponseResult;
+  }
+
   public static <T> ResponseResult<T> success(T data) {
     return new ResponseResult<>(200, data);
   }

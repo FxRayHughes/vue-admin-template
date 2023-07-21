@@ -19,8 +19,8 @@ public class LoginUserServiceImpl implements UserDetailsService {
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
     SystemUserEntity systemUserEntity = systemUserService.selectByLoginName(username);
-    if (Objects.isNull(systemUserEntity)) {
-      throw new RuntimeException("用户不存在");
+    if (systemUserEntity == null || Objects.isNull(systemUserEntity.getUserId())) {
+      throw new UsernameNotFoundException("用户不存在");
     }
     return new LoginUser(systemUserEntity);
   }

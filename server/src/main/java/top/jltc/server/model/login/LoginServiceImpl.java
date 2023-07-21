@@ -31,14 +31,13 @@ public class LoginServiceImpl implements LoginService {
   public ResponseResult<Pair<String, String>> login(SystemUserEntity systemUserEntity) {
     UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(systemUserEntity.getLoginName(), systemUserEntity.getLoginPwd());
     Authentication authenticate = authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-    if (Objects.isNull(authenticate)) {
-      return ResponseResult.error(new Pair<>("token", "null"));
+    if (authenticate == null){
+      return ResponseResult.error(null, "登录失败");
     }
     SystemUserEntity principal = ((LoginUser) authenticate.getPrincipal()).getSystemUserEntity();
-    String id = principal.getUserId().toString();
-    String jwt = JwtUtil.createJWT(id);
-
-    redisCache.setCacheObject("login:" + id, systemUserService.selectByUserId(principal.getUserId()));
+    Integer id = principal.getUserId();
+    String jwt = JwtUtil.createJWT(id.toString());
+    redisCache.setCacheObject("login:" + id, systemUserEntity);
     return ResponseResult.success(new Pair<>("token", jwt), "登录成功");
   }
 

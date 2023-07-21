@@ -1,6 +1,7 @@
 package top.jltc.server.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.BoundSetOperations;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -17,6 +18,10 @@ public class RedisCache {
 
   @Resource
   public RedisTemplate redisTemplate;
+
+  public RedisCache() {
+    System.out.println("RedisCache");
+  }
 
   /**
    * 缓存基本的对象，Integer、String、实体类等
@@ -60,7 +65,7 @@ public class RedisCache {
    * @return true=设置成功；false=设置失败
    */
   public boolean expire(final String key, final long timeout, final TimeUnit unit) {
-    return Boolean.TRUE.equals(redisTemplate.expire(key, timeout, unit));
+    return redisTemplate.expire(key, timeout, unit);
   }
 
   /**
@@ -80,7 +85,7 @@ public class RedisCache {
    * @param key
    */
   public boolean deleteObject(final String key) {
-    return Boolean.TRUE.equals(redisTemplate.delete(key));
+    return redisTemplate.delete(key);
   }
 
   /**
