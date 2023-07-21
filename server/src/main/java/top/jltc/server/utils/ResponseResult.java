@@ -32,11 +32,11 @@ public class ResponseResult<T> {
   }
 
   public static <T> ResponseResult<T> success(T data) {
-    return new ResponseResult<>(200, data);
+    return new ResponseResult<>(20000, data);
   }
 
   public static <T> ResponseResult<T> success(T data, String msg) {
-    ResponseResult<T> tResponseResult = new ResponseResult<>(200, data);
+    ResponseResult<T> tResponseResult = new ResponseResult<>(20000, data);
     tResponseResult.setMsg(msg);
     return tResponseResult;
   }

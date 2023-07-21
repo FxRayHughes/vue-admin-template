@@ -52,9 +52,10 @@ public class SecurityConfig {
       .antMatchers("/api/user/refresh").anonymous()
       .anyRequest().authenticated()
       .and()
+      .addFilterBefore(new JwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class)
       .cors()
       .and()
-      .addFilterBefore(new JwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class)
       .build();
   }
+
 }
