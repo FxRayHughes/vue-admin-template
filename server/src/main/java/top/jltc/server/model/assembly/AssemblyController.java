@@ -1,5 +1,6 @@
 package top.jltc.server.model.assembly;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.jltc.server.utils.ResponseResult;
@@ -13,9 +14,14 @@ public class AssemblyController {
   @Resource
   private AssemblyService assemblyService;
 
-  @RequestMapping("/getAll")
+  @RequestMapping("/list")
   public Object getAll() {
     return new ResponseResult<>(200, "success", assemblyService.getAll());
+  }
+
+  @RequestMapping("/get/{id}")
+  public Object getById(@PathVariable String id) {
+    return new ResponseResult<>(200, "success", assemblyService.getOne(Integer.parseInt(id)));
   }
 
 }

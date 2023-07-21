@@ -3641,3 +3641,563 @@ Caused by: java.lang.IllegalArgumentException: When allowCredentials is true, al
 2023-07-21 12:10:35.412  INFO 12824 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-21 12:10:35.413  INFO 12824 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-21 12:10:35.413  INFO 12824 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 12:53:35.042  INFO 12824 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 12:53:35.043  INFO 12824 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 13:59:00.749  INFO 32092 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 32092 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 13:59:00.750  INFO 32092 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 13:59:00.780  INFO 32092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 13:59:00.780  INFO 32092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 13:59:01.296  INFO 32092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 13:59:01.298  INFO 32092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 13:59:01.318  INFO 32092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-07-21 13:59:01.771  INFO 32092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 13:59:01.778  INFO 32092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 13:59:01.778  INFO 32092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 13:59:01.832  INFO 32092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 13:59:01.832  INFO 32092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1052 ms
+2023-07-21 13:59:01.877  INFO 32092 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 13:59:01.947  INFO 32092 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 13:59:02.395  INFO 32092 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b1c9c1a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a7c9a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@51f4ef7b, org.springframework.security.web.header.HeaderWriterFilter@35d36254, org.springframework.web.filter.CorsFilter@297cfb8a, org.springframework.security.web.authentication.logout.LogoutFilter@6c51d70f, top.jltc.server.filter.JwtAuthenticationTokenFilter@4897eeac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36eebace, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@716dc880, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17b457e8, org.springframework.security.web.session.SessionManagementFilter@51b657a2, org.springframework.security.web.access.ExceptionTranslationFilter@5dc2a349, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c8f7aec]
+2023-07-21 13:59:03.265  INFO 32092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 13:59:03.284  INFO 32092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 13:59:03.334  INFO 32092 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 13:59:03.341  INFO 32092 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.885 seconds (JVM running for 3.763)
+2023-07-21 13:59:13.982  INFO 32092 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 13:59:13.982  INFO 32092 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 13:59:13.983  INFO 32092 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:00:27.389  INFO 32092 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:00:27.394  INFO 32092 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:00:31.172  INFO 26720 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 26720 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:00:31.173  INFO 26720 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:00:31.204  INFO 26720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:00:31.205  INFO 26720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:00:31.642  INFO 26720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:00:31.644  INFO 26720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:00:31.662  INFO 26720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:00:32.067  INFO 26720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:00:32.073  INFO 26720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:00:32.073  INFO 26720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:00:32.128  INFO 26720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:00:32.128  INFO 26720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 923 ms
+2023-07-21 14:00:32.174  INFO 26720 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:00:32.234  INFO 26720 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:00:32.630  INFO 26720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@275176f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d380208, org.springframework.security.web.context.SecurityContextPersistenceFilter@50977498, org.springframework.security.web.header.HeaderWriterFilter@2a9d15b6, org.springframework.web.filter.CorsFilter@4645c85b, org.springframework.security.web.authentication.logout.LogoutFilter@309e0428, top.jltc.server.filter.JwtAuthenticationTokenFilter@624f39e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37fb65cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c33b5ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a6ed378, org.springframework.security.web.session.SessionManagementFilter@4798d235, org.springframework.security.web.access.ExceptionTranslationFilter@4593c346, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a7f7361]
+2023-07-21 14:00:33.496  INFO 26720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:00:33.517  INFO 26720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:00:33.563  INFO 26720 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:00:33.569  INFO 26720 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.65 seconds (JVM running for 3.554)
+2023-07-21 14:00:49.599  INFO 26720 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:00:49.599  INFO 26720 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:00:49.600  INFO 26720 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:05:13.988  INFO 26720 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:05:13.989  INFO 26720 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:05:16.504  INFO 3608 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 3608 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:05:16.505  INFO 3608 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:05:16.531  INFO 3608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:05:16.532  INFO 3608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:05:16.989  INFO 3608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:05:16.990  INFO 3608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:05:17.005  INFO 3608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:05:17.431  INFO 3608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:05:17.437  INFO 3608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:05:17.437  INFO 3608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:05:17.487  INFO 3608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:05:17.487  INFO 3608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 955 ms
+2023-07-21 14:05:17.526  INFO 3608 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:05:17.581  INFO 3608 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:05:17.942  INFO 3608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7267fc90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87c592, org.springframework.security.web.context.SecurityContextPersistenceFilter@57288d4e, org.springframework.security.web.header.HeaderWriterFilter@3465273f, org.springframework.web.filter.CorsFilter@49377abd, org.springframework.security.web.authentication.logout.LogoutFilter@545c3549, top.jltc.server.filter.JwtAuthenticationTokenFilter@cb85fd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f702dd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@500b1b42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41f6a1aa, org.springframework.security.web.session.SessionManagementFilter@54a077b9, org.springframework.security.web.access.ExceptionTranslationFilter@79e1e11c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f912441]
+2023-07-21 14:05:18.791  INFO 3608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:05:18.809  INFO 3608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:05:18.852  INFO 3608 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:05:18.858  INFO 3608 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.637 seconds (JVM running for 3.503)
+2023-07-21 14:05:23.965  INFO 3608 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:05:23.965  INFO 3608 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:05:23.965  INFO 3608 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 14:08:49.874  INFO 3608 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:08:49.878  INFO 3608 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:08:53.107  INFO 14812 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 14812 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:08:53.108  INFO 14812 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:08:53.134  INFO 14812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:08:53.134  INFO 14812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:08:53.550  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:08:53.551  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:08:53.566  INFO 14812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:08:53.943  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:08:53.948  INFO 14812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:08:53.949  INFO 14812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:08:53.998  INFO 14812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:08:53.999  INFO 14812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
+2023-07-21 14:08:54.040  INFO 14812 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:08:54.097  INFO 14812 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:08:54.463  INFO 14812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24d134ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@119e0293, org.springframework.security.web.context.SecurityContextPersistenceFilter@51b657a2, org.springframework.security.web.header.HeaderWriterFilter@e99ba75, org.springframework.web.filter.CorsFilter@3b1c9c1a, org.springframework.security.web.authentication.logout.LogoutFilter@f57eb04, top.jltc.server.filter.JwtAuthenticationTokenFilter@4a7c9a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51f4ef7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36eebace, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@297cfb8a, org.springframework.security.web.session.SessionManagementFilter@68d3c463, org.springframework.security.web.access.ExceptionTranslationFilter@666ccf29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2753dc85]
+2023-07-21 14:08:55.257  INFO 14812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:08:55.274  INFO 14812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:08:55.316  INFO 14812 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:08:55.321  INFO 14812 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.44 seconds (JVM running for 3.274)
+2023-07-21 14:09:04.722  INFO 14812 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:09:04.722  INFO 14812 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:09:04.723  INFO 14812 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:09:39.550  INFO 14812 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:09:39.550  INFO 14812 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:09:42.736  INFO 22640 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 22640 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:09:42.737  INFO 22640 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:09:42.763  INFO 22640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:09:42.763  INFO 22640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:09:43.194  INFO 22640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:09:43.195  INFO 22640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:09:43.211  INFO 22640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:09:43.606  INFO 22640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:09:43.612  INFO 22640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:09:43.612  INFO 22640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:09:43.663  INFO 22640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:09:43.664  INFO 22640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 901 ms
+2023-07-21 14:09:43.703  INFO 22640 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:09:43.759  INFO 22640 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:09:44.098  INFO 22640 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b4bc854, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d86e12d, org.springframework.security.web.context.SecurityContextPersistenceFilter@76f61cbf, org.springframework.security.web.header.HeaderWriterFilter@59f6f629, org.springframework.web.filter.CorsFilter@18122319, org.springframework.security.web.authentication.logout.LogoutFilter@fe1c6ae, top.jltc.server.filter.JwtAuthenticationTokenFilter@3718bf25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e3e4254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19202cf9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4264c8fa, org.springframework.security.web.session.SessionManagementFilter@713fbebf, org.springframework.security.web.access.ExceptionTranslationFilter@7a12b848, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b602118]
+2023-07-21 14:09:44.915  INFO 22640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:09:44.933  INFO 22640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:09:44.978  INFO 22640 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:09:44.993  INFO 22640 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.506 seconds (JVM running for 3.354)
+2023-07-21 14:09:46.058  INFO 22640 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:09:46.058  INFO 22640 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:09:46.059  INFO 22640 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:11:36.174  INFO 22640 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:11:36.181  INFO 22640 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:11:39.411  INFO 14808 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 14808 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:11:39.412  INFO 14808 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:11:39.438  INFO 14808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:11:39.438  INFO 14808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:11:39.866  INFO 14808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:11:39.867  INFO 14808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:11:39.884  INFO 14808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:11:40.299  INFO 14808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:11:40.305  INFO 14808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:11:40.305  INFO 14808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:11:40.358  INFO 14808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:11:40.358  INFO 14808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 920 ms
+2023-07-21 14:11:40.397  INFO 14808 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:11:40.456  INFO 14808 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:11:40.799  INFO 14808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b845599, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58d56892, org.springframework.security.web.context.SecurityContextPersistenceFilter@427ac76d, org.springframework.security.web.header.HeaderWriterFilter@7ea6568b, org.springframework.web.filter.CorsFilter@4a39b197, org.springframework.security.web.authentication.logout.LogoutFilter@27356e2a, top.jltc.server.filter.JwtAuthenticationTokenFilter@1b81c440, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73839022, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4042ea9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72c07234, org.springframework.security.web.session.SessionManagementFilter@4f610811, org.springframework.security.web.access.ExceptionTranslationFilter@50c3094e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ba482f3]
+2023-07-21 14:11:41.592  INFO 14808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:11:41.610  INFO 14808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:11:41.666  INFO 14808 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:11:41.671  INFO 14808 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.504 seconds (JVM running for 3.382)
+2023-07-21 14:11:54.062  INFO 14808 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:11:54.062  INFO 14808 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:11:54.063  INFO 14808 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 14:17:32.265  INFO 14808 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:17:32.269  INFO 14808 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:17:35.440  INFO 26992 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 26992 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:17:35.442  INFO 26992 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:17:35.472  INFO 26992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:17:35.472  INFO 26992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:17:35.892  INFO 26992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:17:35.894  INFO 26992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:17:35.908  INFO 26992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:17:36.286  INFO 26992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:17:36.292  INFO 26992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:17:36.292  INFO 26992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:17:36.371  INFO 26992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:17:36.371  INFO 26992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 898 ms
+2023-07-21 14:17:36.417  WARN 26992 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'top.jltc.server.filter.JwtAuthenticationTokenFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-07-21 14:17:36.419  INFO 26992 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-21 14:17:36.430  INFO 26992 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-21 14:17:36.447 ERROR 26992 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'top.jltc.server.filter.JwtAuthenticationTokenFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'top.jltc.server.filter.JwtAuthenticationTokenFilter' in your configuration.
+
+2023-07-21 14:18:16.036  INFO 32656 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 32656 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:18:16.038  INFO 32656 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:18:16.065  INFO 32656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:18:16.065  INFO 32656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:18:16.481  INFO 32656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:18:16.483  INFO 32656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:18:16.497  INFO 32656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:18:16.875  INFO 32656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:18:16.880  INFO 32656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:18:16.880  INFO 32656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:18:16.935  INFO 32656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:18:16.935  INFO 32656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2023-07-21 14:18:17.150  WARN 32656 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.web.AuthenticationEntryPoint' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-07-21 14:18:17.160  INFO 32656 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-21 14:18:17.171  INFO 32656 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-21 14:18:17.182 ERROR 32656 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.springframework.security.web.AuthenticationEntryPoint' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.web.AuthenticationEntryPoint' in your configuration.
+
+2023-07-21 14:18:45.261  INFO 7264 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 7264 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:18:45.263  INFO 7264 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:18:45.293  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:18:45.293  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:18:45.700  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:18:45.702  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:18:45.716  INFO 7264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:18:46.103  INFO 7264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:18:46.108  INFO 7264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:18:46.108  INFO 7264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:18:46.157  INFO 7264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:18:46.158  INFO 7264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2023-07-21 14:18:46.395  INFO 7264 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:18:46.451  INFO 7264 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:18:46.823  INFO 7264 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36ebb85e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@253a3811, org.springframework.security.web.context.SecurityContextPersistenceFilter@35e5ca2e, org.springframework.security.web.header.HeaderWriterFilter@71c56d65, org.springframework.web.filter.CorsFilter@5e4db60d, org.springframework.security.web.authentication.logout.LogoutFilter@28df0c22, top.jltc.server.filter.JwtAuthenticationTokenFilter@29ab589c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3109c4c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c545bed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43076707, org.springframework.security.web.session.SessionManagementFilter@711d3cbb, org.springframework.security.web.access.ExceptionTranslationFilter@7e9a0a22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@210c01e3]
+2023-07-21 14:18:47.470  INFO 7264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:18:47.487  INFO 7264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:18:47.533  INFO 7264 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:18:47.538  INFO 7264 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.51 seconds (JVM running for 3.337)
+2023-07-21 14:18:54.582  INFO 7264 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:18:54.582  INFO 7264 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:18:54.582  INFO 7264 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 14:19:14.727  INFO 7264 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:19:14.727  INFO 7264 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:19:17.800  INFO 12792 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 12792 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:19:17.801  INFO 12792 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:19:17.826  INFO 12792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:19:17.826  INFO 12792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:19:18.247  INFO 12792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:19:18.248  INFO 12792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:19:18.264  INFO 12792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:19:18.656  INFO 12792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:19:18.661  INFO 12792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:19:18.661  INFO 12792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:19:18.713  INFO 12792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:19:18.713  INFO 12792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 887 ms
+2023-07-21 14:19:18.952  INFO 12792 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:19:19.006  INFO 12792 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:19:19.364  INFO 12792 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ec2444, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ab29d26, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c9db044, org.springframework.security.web.header.HeaderWriterFilter@72ee5182, org.springframework.web.filter.CorsFilter@6f6e7384, org.springframework.security.web.authentication.logout.LogoutFilter@55fa440a, top.jltc.server.filter.JwtAuthenticationTokenFilter@711f98c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@501a1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19c01912, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fd3a751, org.springframework.security.web.session.SessionManagementFilter@1aaad87b, org.springframework.security.web.access.ExceptionTranslationFilter@21ff6a30, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36c11044]
+2023-07-21 14:19:19.991  INFO 12792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:19:20.009  INFO 12792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:19:20.052  INFO 12792 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:19:20.058  INFO 12792 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.496 seconds (JVM running for 3.303)
+2023-07-21 14:19:22.949  INFO 12792 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:19:22.949  INFO 12792 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:19:22.950  INFO 12792 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:20:28.658  INFO 12792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:20:28.763  INFO 12792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:20:31.981  INFO 27436 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 27436 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:20:31.982  INFO 27436 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:20:32.011  INFO 27436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:20:32.011  INFO 27436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:20:32.439  INFO 27436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:20:32.440  INFO 27436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:20:32.455  INFO 27436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:20:32.843  INFO 27436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:20:32.849  INFO 27436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:20:32.849  INFO 27436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:20:32.905  INFO 27436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:20:32.905  INFO 27436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 894 ms
+2023-07-21 14:20:33.132  INFO 27436 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:20:33.187  INFO 27436 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:20:33.561  INFO 27436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ca58f71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7497abf8, org.springframework.security.web.context.SecurityContextPersistenceFilter@b876394, org.springframework.security.web.header.HeaderWriterFilter@6fa65d00, org.springframework.web.filter.CorsFilter@1fece38c, org.springframework.security.web.authentication.logout.LogoutFilter@75d987e4, top.jltc.server.filter.JwtAuthenticationTokenFilter@f1af899, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fae612a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f2e9565, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54e9eb53, org.springframework.security.web.session.SessionManagementFilter@6a919296, org.springframework.security.web.access.ExceptionTranslationFilter@37e01591, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b70d662]
+2023-07-21 14:20:34.180  INFO 27436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:20:34.199  INFO 27436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:20:34.242  INFO 27436 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:20:34.248  INFO 27436 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.504 seconds (JVM running for 3.336)
+2023-07-21 14:20:44.533  INFO 27436 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:20:44.533  INFO 27436 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:20:44.534  INFO 27436 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:21:10.412  INFO 27436 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:21:10.416  INFO 27436 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:21:13.473  INFO 15404 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 15404 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:21:13.474  INFO 15404 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:21:13.499  INFO 15404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:21:13.499  INFO 15404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:21:13.908  INFO 15404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:21:13.909  INFO 15404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:21:13.924  INFO 15404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:21:14.313  INFO 15404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:21:14.318  INFO 15404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:21:14.318  INFO 15404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:21:14.370  INFO 15404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:21:14.370  INFO 15404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2023-07-21 14:21:14.589  INFO 15404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:21:14.642  INFO 15404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:21:15.000  INFO 15404 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c9a8843, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b35fbff, org.springframework.security.web.context.SecurityContextPersistenceFilter@6558b4b7, org.springframework.security.web.header.HeaderWriterFilter@3fd2a631, org.springframework.web.filter.CorsFilter@64404513, org.springframework.security.web.authentication.logout.LogoutFilter@22e9585e, top.jltc.server.filter.JwtAuthenticationTokenFilter@3aaf8c1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77a9c3c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2901003e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42ec612b, org.springframework.security.web.session.SessionManagementFilter@2c1987f1, org.springframework.security.web.access.ExceptionTranslationFilter@54846ff6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51918d0]
+2023-07-21 14:21:15.611  INFO 15404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:21:15.628  INFO 15404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:21:15.671  INFO 15404 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:21:15.677  INFO 15404 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.441 seconds (JVM running for 3.231)
+2023-07-21 14:38:00.161  INFO 15404 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:38:00.161  INFO 15404 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:38:03.554  INFO 29900 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 29900 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:38:03.555  INFO 29900 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:38:03.586  INFO 29900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:38:03.586  INFO 29900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:38:04.040  INFO 29900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:38:04.042  INFO 29900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:38:04.060  INFO 29900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:38:04.490  INFO 29900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:38:04.497  INFO 29900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:38:04.497  INFO 29900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:38:04.552  INFO 29900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:38:04.553  INFO 29900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 966 ms
+2023-07-21 14:38:04.784  INFO 29900 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:38:04.843  INFO 29900 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:38:04.990  INFO 29900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2eb6e33c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5efff2ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@794603e, org.springframework.security.web.header.HeaderWriterFilter@13b2f827, org.springframework.web.filter.CorsFilter@287ff669, org.springframework.security.web.authentication.logout.LogoutFilter@14cf51d2, top.jltc.server.filter.JwtAuthenticationTokenFilter@60f4f74b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13ed0092, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7427ff57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@df019b9, org.springframework.security.web.session.SessionManagementFilter@5506ec8b, org.springframework.security.web.access.ExceptionTranslationFilter@46898804, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c381ebe]
+2023-07-21 14:38:05.827  INFO 29900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:38:05.844  INFO 29900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:38:05.898  INFO 29900 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:38:05.904  INFO 29900 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.597 seconds (JVM running for 3.481)
+2023-07-21 14:39:16.228  INFO 29900 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:39:16.228  INFO 29900 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:39:19.431  INFO 29240 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 29240 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:39:19.432  INFO 29240 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:39:19.465  INFO 29240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:39:19.466  INFO 29240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:39:19.899  INFO 29240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:39:19.901  INFO 29240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:39:19.916  INFO 29240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:39:20.312  INFO 29240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:39:20.317  INFO 29240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:39:20.318  INFO 29240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:39:20.374  INFO 29240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:39:20.375  INFO 29240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+2023-07-21 14:39:20.577  INFO 29240 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:39:20.634  INFO 29240 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:39:20.779  INFO 29240 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63f57524, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d418f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@583dca23, org.springframework.security.web.header.HeaderWriterFilter@a044217, org.springframework.web.filter.CorsFilter@5bb20bcf, org.springframework.security.web.authentication.logout.LogoutFilter@206d13f4, top.jltc.server.filter.JwtAuthenticationTokenFilter@5a653f19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@800c60d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27356e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47add3f8, org.springframework.security.web.session.SessionManagementFilter@44b36147, org.springframework.security.web.access.ExceptionTranslationFilter@32eef860, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@724d888d]
+2023-07-21 14:39:21.604  INFO 29240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:39:21.620  INFO 29240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:39:21.663  INFO 29240 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:39:21.668  INFO 29240 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.519 seconds (JVM running for 3.379)
+2023-07-21 14:39:26.260  INFO 29240 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:39:26.260  INFO 29240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:39:26.261  INFO 29240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:39:26.279 ERROR 29240 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:473) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.CorsConfiguration.checkOrigin(CorsConfiguration.java:577) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.checkOrigin(DefaultCorsProcessor.java:174) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.handleInternal(DefaultCorsProcessor.java:116) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.processRequest(DefaultCorsProcessor.java:95) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:87) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142) ~[spring-session-core-2.7.2.jar:2.7.2]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.7.2.jar:2.7.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_352]
+
+2023-07-21 14:39:29.169 ERROR 29240 --- [http-nio-8088-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:473) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.CorsConfiguration.checkOrigin(CorsConfiguration.java:577) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.checkOrigin(DefaultCorsProcessor.java:174) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.handleInternal(DefaultCorsProcessor.java:116) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.cors.DefaultCorsProcessor.processRequest(DefaultCorsProcessor.java:95) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:87) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.10-SNAPSHOT.jar:5.7.10-SNAPSHOT]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142) ~[spring-session-core-2.7.2.jar:2.7.2]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.7.2.jar:2.7.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.78.jar:9.0.78]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_352]
+
+2023-07-21 14:40:36.566  INFO 29240 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:40:36.567  INFO 29240 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:40:39.767  INFO 30404 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 30404 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:40:39.768  INFO 30404 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:40:39.798  INFO 30404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:40:39.798  INFO 30404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:40:40.209  INFO 30404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:40:40.211  INFO 30404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:40:40.226  INFO 30404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:40:40.606  INFO 30404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:40:40.611  INFO 30404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:40:40.612  INFO 30404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:40:40.662  INFO 30404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:40:40.662  INFO 30404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2023-07-21 14:40:40.878  INFO 30404 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:40:40.936  INFO 30404 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:40:41.077  INFO 30404 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ad3fbbd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2688844a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2895cb22, org.springframework.security.web.header.HeaderWriterFilter@7427ff57, org.springframework.web.filter.CorsFilter@37729313, org.springframework.security.web.authentication.logout.LogoutFilter@fa3e79d, top.jltc.server.filter.JwtAuthenticationTokenFilter@bca9f74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e2a63df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38760d95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34029275, org.springframework.security.web.session.SessionManagementFilter@d77a81a, org.springframework.security.web.access.ExceptionTranslationFilter@794603e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50f777c5]
+2023-07-21 14:40:41.894  INFO 30404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:40:41.910  INFO 30404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:40:41.955  INFO 30404 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:40:41.961  INFO 30404 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.429 seconds (JVM running for 3.247)
+2023-07-21 14:40:48.108  INFO 30404 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:40:48.108  INFO 30404 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:40:48.109  INFO 30404 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:42:06.992  INFO 30404 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:42:06.992  INFO 30404 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:42:10.066  INFO 1772 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 1772 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:42:10.067  INFO 1772 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:42:10.094  INFO 1772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:42:10.094  INFO 1772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:42:10.493  INFO 1772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:42:10.495  INFO 1772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:42:10.510  INFO 1772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:42:10.893  INFO 1772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:42:10.899  INFO 1772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:42:10.899  INFO 1772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:42:10.949  INFO 1772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:42:10.949  INFO 1772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 855 ms
+2023-07-21 14:42:11.165  INFO 1772 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:42:11.221  INFO 1772 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:42:11.358  INFO 1772 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b13cf6b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32cfa7ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@fa92c70, org.springframework.security.web.header.HeaderWriterFilter@6c33b5ce, org.springframework.web.filter.CorsFilter@414953ca, org.springframework.security.web.authentication.logout.LogoutFilter@6fd9ec51, top.jltc.server.filter.JwtAuthenticationTokenFilter@7a91d82e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ddd5fb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@163f7d1b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c00d0c, org.springframework.security.web.session.SessionManagementFilter@4eff45cd, org.springframework.security.web.access.ExceptionTranslationFilter@50977498, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24ac0240]
+2023-07-21 14:42:12.189  INFO 1772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:42:12.206  INFO 1772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:42:12.249  INFO 1772 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:42:12.255  INFO 1772 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.422 seconds (JVM running for 3.237)
+2023-07-21 14:42:17.460  INFO 1772 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:42:17.460  INFO 1772 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:42:17.460  INFO 1772 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 14:43:10.325  INFO 1772 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:43:10.325  INFO 1772 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:43:13.461  INFO 32496 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 32496 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:43:13.462  INFO 32496 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:43:13.492  INFO 32496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:43:13.492  INFO 32496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:43:13.903  INFO 32496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:43:13.904  INFO 32496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:43:13.919  INFO 32496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:43:14.291  INFO 32496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:43:14.296  INFO 32496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:43:14.297  INFO 32496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:43:14.346  INFO 32496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:43:14.346  INFO 32496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+2023-07-21 14:43:14.543  INFO 32496 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:43:14.601  INFO 32496 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:43:14.744  INFO 32496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bd4c651, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c95dd44, org.springframework.security.web.context.SecurityContextPersistenceFilter@4791f763, org.springframework.security.web.header.HeaderWriterFilter@284bfd, org.springframework.web.filter.CorsFilter@2f38cbce, org.springframework.security.web.authentication.logout.LogoutFilter@33e0b929, top.jltc.server.filter.JwtAuthenticationTokenFilter@4778ec68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9d5c99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a88a17a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@468064c9, org.springframework.security.web.session.SessionManagementFilter@5ca9678d, org.springframework.security.web.access.ExceptionTranslationFilter@1bf86ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36d808bd]
+2023-07-21 14:43:15.618  INFO 32496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:43:15.635  INFO 32496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:43:15.680  INFO 32496 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:43:15.686  INFO 32496 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.459 seconds (JVM running for 3.341)
+2023-07-21 14:44:02.445  INFO 32496 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:44:02.446  INFO 32496 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:44:02.447  INFO 32496 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-21 14:45:07.121  INFO 32496 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:45:07.121  INFO 32496 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-21 14:45:10.166  INFO 31812 --- [restartedMain] top.jltc.server.ServerApplication        : Starting ServerApplication using Java 1.8.0_352 on OMEN8Pro with PID 31812 (E:\Vue\vea\vue-admin-template\server\build\classes\java\main started by Test in E:\Vue\vea\vue-admin-template)
+2023-07-21 14:45:10.167  INFO 31812 --- [restartedMain] top.jltc.server.ServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-07-21 14:45:10.193  INFO 31812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 14:45:10.194  INFO 31812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 14:45:10.588  INFO 31812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-21 14:45:10.590  INFO 31812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-21 14:45:10.604  INFO 31812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-07-21 14:45:10.998  INFO 31812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-07-21 14:45:11.004  INFO 31812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-21 14:45:11.004  INFO 31812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2023-07-21 14:45:11.055  INFO 31812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-21 14:45:11.055  INFO 31812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2023-07-21 14:45:11.263  INFO 31812 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-07-21 14:45:11.318  INFO 31812 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-21 14:45:11.462  INFO 31812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51a6228a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29282091, org.springframework.security.web.context.SecurityContextPersistenceFilter@582c8c46, org.springframework.security.web.header.HeaderWriterFilter@3f11ad0a, org.springframework.web.filter.CorsFilter@6d6bf5b0, org.springframework.security.web.authentication.logout.LogoutFilter@a3b063a, top.jltc.server.filter.JwtAuthenticationTokenFilter@678ff370, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d1fb5d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@154907c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@113dbcd4, org.springframework.security.web.session.SessionManagementFilter@77e986a3, org.springframework.security.web.access.ExceptionTranslationFilter@191491b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ed4eb]
+2023-07-21 14:45:12.282  INFO 31812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-21 14:45:12.299  INFO 31812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-21 14:45:12.340  INFO 31812 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-07-21 14:45:12.345  INFO 31812 --- [restartedMain] top.jltc.server.ServerApplication        : Started ServerApplication in 2.424 seconds (JVM running for 3.223)
+2023-07-21 14:45:19.019  INFO 31812 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-21 14:45:19.019  INFO 31812 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-21 14:45:19.020  INFO 31812 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-21 14:45:19.514  WARN 31812 --- [http-nio-8088-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /api/system_user/info
+2023-07-21 14:46:33.203  WARN 31812 --- [http-nio-8088-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /api/system_user/info
+2023-07-21 14:49:48.570  INFO 31812 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 14:49:48.586  INFO 31812 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

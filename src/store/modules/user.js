@@ -1,7 +1,6 @@
 import { login, logout, getInfo } from '@/api/user'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 import { resetRouter } from '@/router'
-import da from 'element-ui/src/locale/lang/da'
 
 const getDefaultState = () => {
   return {
@@ -57,9 +56,8 @@ const actions = {
           return reject('Verification failed, please Login again.')
         }
 
-        const { name, avatar } = data
-
-        commit('SET_NAME', name)
+        const { userName, avatar } = data
+        commit('SET_NAME', userName)
         commit('SET_AVATAR', avatar)
         resolve(data)
       }).catch(error => {
