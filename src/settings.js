@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '乔木花火',
+  title: '制造',
 
   /**
    * @type {boolean} true | false

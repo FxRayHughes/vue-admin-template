@@ -13,3 +13,26 @@ export function getAssemblyGetOne(params) {
     method: 'get'
   })
 }
+
+export function updateAssembly(params) {
+  return request({
+    url: '/api/assembly/update',
+    method: 'put',
+    data: params
+  })
+}
+
+export function deleteAssembly(params) {
+  return request({
+    url: `/api/assembly/delete/${params}`,
+    method: 'delete'
+  })
+}
+
+export function addAssembly(params) {
+  return request({
+    url: '/api/assembly/insert',
+    method: 'post',
+    data: params
+  })
+}
