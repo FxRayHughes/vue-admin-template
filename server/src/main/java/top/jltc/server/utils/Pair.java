@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 public class Pair<T, E> {
 
   private T key;
-
   private E value;
 
 }

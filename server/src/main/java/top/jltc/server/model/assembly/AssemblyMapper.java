@@ -23,4 +23,16 @@ public interface AssemblyMapper {
 
   @Select("DELETE FROM mes_assembly WHERE id = #{id}")
   Integer delete(Integer id);
+  @Select("SELECT * FROM mes_assembly WHERE " +
+    "(name LIKE #{name} OR #{name} IS NULL) AND " +
+    "(pmc LIKE #{pmc} OR #{pmc} IS NULL) AND " +
+    "(pps LIKE #{pps} OR #{pps} IS NULL) AND " +
+    "(product LIKE #{product} OR #{product} IS NULL) AND " +
+    "(model LIKE #{model} OR #{model} IS NULL) AND " +
+    "(specifications LIKE #{specifications} OR #{specifications} IS NULL) AND " +
+    "(unit LIKE #{unit} OR #{unit} IS NULL) AND " +
+    "(#{end_time} IS NOT NULL AND start_time >= #{start_time} AND end_time <= #{end_time}) OR " +
+    "(#{end_time} IS NULL AND start_time >= #{start_time}) " +
+    "ORDER BY end_time DESC")
+  List<AssemblyEntity> like(AssemblyEntity assemblyEntity);
 }

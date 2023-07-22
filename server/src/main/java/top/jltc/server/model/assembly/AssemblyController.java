@@ -15,6 +15,7 @@ public class AssemblyController {
 
   @RequestMapping(value = "/list", method = RequestMethod.GET)
   public Object getAll() {
+    System.out.println("AssemblyController.getAll");
     return ResponseResult.success(assemblyService.getAll(), "成功");
   }
 
@@ -37,7 +38,14 @@ public class AssemblyController {
 
   @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
   public Object delete(@PathVariable String id) {
+    //
     return ResponseResult.success(assemblyService.delete(Integer.parseInt(id)), "删除成功");
+  }
+
+  @RequestMapping(value = "/like", method = RequestMethod.POST)
+  public Object like(@RequestBody JSONObject jsonObject) {
+    AssemblyEntity javaObject = jsonObject.toJavaObject(AssemblyEntity.class);
+    return null;
   }
 
 }
