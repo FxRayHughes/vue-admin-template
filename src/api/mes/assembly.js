@@ -36,3 +36,11 @@ export function addAssembly(params) {
     data: params
   })
 }
+
+export function getAssemblyLike(params) {
+  return request({
+    url: '/api/assembly/like',
+    method: 'post',
+    data: params
+  })
+}

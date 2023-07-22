@@ -23,6 +23,7 @@ public interface AssemblyMapper {
 
   @Select("DELETE FROM mes_assembly WHERE id = #{id}")
   Integer delete(Integer id);
+
   @Select("SELECT * FROM mes_assembly WHERE " +
     "(name LIKE #{name} OR #{name} IS NULL) AND " +
     "(pmc LIKE #{pmc} OR #{pmc} IS NULL) AND " +

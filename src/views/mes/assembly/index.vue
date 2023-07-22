@@ -2,14 +2,10 @@
   <div id="assembly">
     <el-container>
       <el-header>
-        <el-input
-          placeholder="请输入内容"
-          v-model="searchText"
-          clearable
-          @clear="handleClear"
-          @keyup.enter.native="handleSearch"
-          style="width: 300px;"
-        ></el-input>
+        <div>
+          <el-button type="primary" @click="handleLike" size="mini">查询</el-button>
+          <el-button type="primary" @click="handleReLike" size="mini">重置查询</el-button>
+        </div>
         <div style="transform: translateY(10px)">
           <el-button type="primary" @click="handleAdd" size="mini">新增</el-button>
         </div>
@@ -157,7 +153,7 @@
 </template>
 
 <script>
-import { getAssemblyList, updateAssembly, deleteAssembly, addAssembly } from '@/api/mes/assembly'
+import { getAssemblyList, updateAssembly, deleteAssembly, addAssembly, getAssemblyLike } from '@/api/mes/assembly'
 
 export default {
   name: 'Assembly',
@@ -168,7 +164,8 @@ export default {
       showData: [],
       ruleForm: {},
       form: {},
-      dialogVisible: false
+      dialogVisible: false,
+      clock: false
     }
   },
   mounted() {
@@ -176,6 +173,10 @@ export default {
   },
   methods: {
     getlist() {
+      if (this.clock) {
+        this.handleLikeDev()
+        return
+      }
       new Promise((resolve, reject) => {
         getAssemblyList().then(res => {
           resolve(res)
@@ -203,12 +204,46 @@ export default {
 
       return formattedList
     },
+    handleReLike() {
+      this.clock = false
+      this.ruleForm = {}
+      this.getlist()
+    },
     handleEdit(index, row) {
       this.form = {}
       this.ruleForm = {}
       this.form = row
       this.formTitle = `编辑 ${row.id}`
       this.dialogVisible = true
+    },
+    handleLike() {
+      this.form = {}
+      this.ruleForm = {}
+      this.formTitle = `查询`
+      this.clock = true
+      this.dialogVisible = true
+    },
+    handleLikeDev() {
+      new Promise((resolve, reject) => {
+        const form = this.form
+        if (this.ruleForm.date1 != null) {
+          form.start_time = this.ruleForm.date1
+        }
+        if (this.ruleForm.date2 != null) {
+          form.end_time = this.ruleForm.date2
+        }
+        getAssemblyLike(form).then(res => {
+          resolve(res)
+        }).catch(err => {
+          reject(err)
+        })
+      }).then(res => {
+        this.tableData = res.data
+        this.showData = this.formatTime(res.data)
+        this.clock = true
+      }).catch(err => {
+        console.log(err)
+      })
     },
     handleDelete(index, row) {
       this.$confirm('确认删除？')

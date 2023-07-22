@@ -12,4 +12,6 @@ public interface AssemblyService {
   Integer update(AssemblyEntity assemblyEntity);
 
   Integer delete(Integer id);
+
+  List<AssemblyEntity> like(AssemblyEntity assemblyEntity);
 }

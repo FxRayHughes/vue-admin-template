@@ -17,6 +17,11 @@ public class AssemblyServiceImpl implements AssemblyService {
   }
 
   @Override
+  public List<AssemblyEntity> like(AssemblyEntity assemblyEntity) {
+    return assemblyMapper.like(assemblyEntity);
+  }
+
+  @Override
   public List<AssemblyEntity> getAll() {
     return assemblyMapper.getAll();
   }

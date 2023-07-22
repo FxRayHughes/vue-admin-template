@@ -45,7 +45,7 @@ public class AssemblyController {
   @RequestMapping(value = "/like", method = RequestMethod.POST)
   public Object like(@RequestBody JSONObject jsonObject) {
     AssemblyEntity javaObject = jsonObject.toJavaObject(AssemblyEntity.class);
-    return null;
+    return assemblyService.like(javaObject);
   }
 
 }

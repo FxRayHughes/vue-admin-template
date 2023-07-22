@@ -314,7 +314,7 @@ java.lang.RuntimeException: token非法
 2023-07-22 13:45:34.328  INFO 16940 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-22 13:45:34.328  INFO 16940 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-07-22 13:45:34.329  INFO 16940 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-22 13:46:36.126 ERROR 16940 --- [http-nio-8088-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+2023-07-22 13:46:36.126 ERROR 16940 --- [http-nio-8088-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException:
 ### Error querying database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
 ### The error may exist in top/jltc/server/model/assembly/AssemblyMapper.java (best guess)
 ### The error may involve top.jltc.server.model.assembly.AssemblyMapper.update-Inline
@@ -449,7 +449,7 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.78.jar:9.0.78]
 	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_352]
 
-2023-07-22 13:47:38.618 ERROR 16940 --- [http-nio-8088-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+2023-07-22 13:47:38.618 ERROR 16940 --- [http-nio-8088-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException:
 ### Error querying database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'start_time' cannot be null
 ### The error may exist in top/jltc/server/model/assembly/AssemblyMapper.java (best guess)
 ### The error may involve top.jltc.server.model.assembly.AssemblyMapper.update-Inline
@@ -700,3 +700,5 @@ java.lang.RuntimeException: token非法
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.78.jar:9.0.78]
 	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_352]
 
+2023-07-22 14:55:04.100  INFO 16940 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-22 14:55:04.102  INFO 16940 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
